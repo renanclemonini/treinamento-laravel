@@ -8,3 +8,5 @@ for ($i = 0; $i < count($precos); $i++) {
 }
 
 print_r($produtos);
+
+?>
