@@ -2,7 +2,7 @@
 
 class Carro
 {
-    private float $velocidade;
+    private float $velocidade = 0;
 
     public function setVelocidade($velocidade)
     {
@@ -20,8 +20,9 @@ class Carro
     }
 
     public function frear()
-    {
-        return $this->velocidade -=10;
+    {   
+        if($this->velocidade >= 0)
+            return $this->velocidade -= 10;
     }
 
 
